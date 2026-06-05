@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Adaptive Strategy Optimization - IT&amp;I 2024</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+    <style>
+      body { background: #ffffff; }
+      .article-print { width: min(920px, calc(100% - 36px)); margin: 0 auto; padding: 48px 0 72px; }
+      .article-print h1 { margin: 0; font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.04; }
+      .article-print h2 { margin: 34px 0 10px; font-size: 1.22rem; }
+      .article-print p { max-width: 76ch; }
+      .article-meta { margin: 20px 0 28px; padding: 18px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--paper); }
+      .article-meta dl { display: grid; grid-template-columns: 160px minmax(0, 1fr); gap: 8px 16px; margin: 0; }
+      .article-meta dt { color: #64727b; font-weight: 800; }
+      .article-meta dd { margin: 0; }
+      @media print {
+        .site-header, .site-footer { display: none; }
+        .article-print { width: 100%; padding: 0; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="../index.html"><span class="brand__mark">IT</span><span class="brand__text"><strong>IT&amp;I 2024</strong><span>Information Technology and Implementation</span></span></a>
+        <nav class="site-nav" data-nav>
+          <a href="../index.html">Home</a>
+          <a href="../proceedings.html">Proceedings</a>
+          <a href="../paper.html?id=jing-li-adaptive-strategy-optimization-iti-2024">Paper Record</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="article-print">
+      <p class="eyebrow">IT&amp;I 2024 Digital Proceedings</p>
+      <h1>Adaptive Strategy Optimization for Long-Horizon Multi-Channel B2B Campaigns</h1>
+      <p class="authors">Jing Li</p>
+      <div class="article-meta">
+        <dl>
+          <dt>Conference</dt><dd>IT&amp;I 2024 - XI International Scientific Conference "Information Technology and Implementation"</dd>
+          <dt>Article Type</dt><dd>Full research article</dd>
+          <dt>Track</dt><dd>Implementation Management; Data Systems and Analytics</dd>
+          <dt>Date</dt><dd>November 20, 2024</dd>
+          <dt>Keywords</dt><dd>B2B campaigns; adaptive strategy optimization; customer journey analytics; multi-channel engagement; market insights; intervention timing</dd>
+          <dt>Research basis</dt><dd>CV-listed registered work; Fortify campaign-analysis and customer-engagement duties; Green City market-research duties.</dd>
+        </dl>
+      </div>
+
+      <h2>Abstract</h2>
+      <p>B2B marketing campaigns often unfold across long time horizons, multiple decision makers, and several digital and human channels. Static campaign plans are poorly suited for such environments because customer state, engagement readiness, stakeholder access, and opportunity signals change over time. This article proposes an adaptive strategy optimization framework for long-horizon multi-channel B2B campaigns. The framework links customer journey state, account value, response feedback, channel constraints, and intervention timing into an iterative decision process. It emphasizes transparent optimization, governance, and practical decision review rather than black-box automation.</p>
+
+      <h2>1. Introduction</h2>
+      <p>Traditional campaign planning assumes that the marketer can define a sequence of messages, channels, and timing in advance. That assumption is weak in complex B2B environments. A technology buyer may interact with thought-leadership content, product demonstrations, partner communications, service teams, executive sponsors, and procurement staff across several months. The campaign outcome depends not only on message exposure but also on the evolving state of the customer journey.</p>
+      <p>The research challenge is to optimize campaign strategy while the campaign is still unfolding. A long-horizon B2B campaign should learn from engagement signals, adapt channel allocation, and adjust intervention timing. The proposed framework treats campaign strategy as a dynamic decision process grounded in customer engagement analytics and market-insights feedback.</p>
+
+      <h2>2. Customer Journey State</h2>
+      <p>The first element of the framework is customer journey state. Instead of treating a prospect or account as a simple lead score, the model represents the account as a state vector that includes awareness, problem recognition, solution exploration, stakeholder alignment, budget readiness, technical validation, procurement stage, and retention or expansion potential. These states are estimated from observed engagement signals such as content interaction, event participation, meeting progression, service inquiry, product usage, and sales conversation status.</p>
+      <p>Journey-state estimation is particularly useful because it separates intensity from readiness. A customer may show high digital activity without being ready for a commercial conversation, while another customer may show low visible activity but have strong internal urgency. The framework therefore combines behavioral signals with account context and human-validated observations.</p>
+
+      <h2>3. Adaptive Optimization Logic</h2>
+      <p>The optimization process operates in cycles. At the beginning of each cycle, the model reads current journey-state indicators, account value, channel constraints, recent response feedback, and strategic objectives. It then recommends a campaign action: inform, educate, validate, nurture, escalate, retain, or expand. Each action is associated with preferred channels and timing windows. After execution, response signals update the account state and inform the next cycle.</p>
+      <p>This approach differs from one-time campaign scoring. It recognizes that the value of an intervention depends on sequence. An executive briefing may be premature before technical validation, while a technical webinar may be insufficient after procurement urgency has emerged. Adaptive optimization helps align message depth, channel choice, and stakeholder target with the account's current decision state.</p>
+
+      <h2>4. Multi-Channel Coordination</h2>
+      <p>B2B engagement requires coordination across email, website, webinars, events, social channels, sales outreach, partner touchpoints, customer success interactions, and executive communication. The framework assigns each channel a role. Broad digital channels support awareness and education. Sales and partner channels support diagnosis and validation. Customer success channels support adoption, renewal, and expansion. Executive channels support strategic alignment and urgency creation.</p>
+      <p>The framework also introduces channel saturation and fatigue controls. More contact is not always better. A high-value account can disengage if messaging becomes repetitive or poorly timed. Adaptive optimization therefore incorporates negative feedback signals such as nonresponse, meeting cancellation, content abandonment, or stakeholder silence.</p>
+
+      <h2>5. Governance and Human Review</h2>
+      <p>Because B2B campaigns involve relationship judgment, the framework requires human review at defined thresholds. Automated recommendations should be explainable: the model must show which journey-state indicators, response signals, and constraints led to the recommended action. Account teams can accept, override, or defer a recommendation, and the override reason becomes part of the learning record.</p>
+      <p>Governance also helps prevent over-optimization on short-term response metrics. A campaign that maximizes clicks may not maximize qualified opportunity creation, renewal confidence, or long-term customer value. The framework therefore evaluates campaign performance across journey progression, opportunity quality, retention signals, and strategic account development.</p>
+
+      <h2>6. Operationalization</h2>
+      <p>A practical implementation begins with a campaign decision map. For each strategic account segment, the campaign team defines the intended journey progression, stakeholder roles, available channels, allowable contact frequency, escalation thresholds, and success indicators. The model then monitors whether account behavior supports the intended progression. When engagement deviates from the expected path, the framework recommends a strategy adjustment rather than waiting until the campaign ends.</p>
+      <p>The framework also requires an intervention library. Each intervention should have a defined purpose, eligible journey state, primary stakeholder, channel format, evidence requirement, and expected response signal. Examples include educational content for early exploration, comparison assets for solution evaluation, technical validation sessions for late-stage evaluation, executive briefings for strategic alignment, and continuity assurance for renewal-sensitive accounts.</p>
+      <p>The system should maintain a record of each recommendation and response. This record makes it possible to learn which interventions move accounts forward and which merely produce superficial engagement. Over time, the intervention library can be refined by account type, channel, stakeholder role, and campaign objective.</p>
+
+      <h2>7. Evaluation Strategy</h2>
+      <p>Campaign evaluation should combine behavioral, commercial, and strategic metrics. Behavioral metrics include journey progression, content depth, meeting conversion, event participation, and stakeholder diversification. Commercial metrics include qualified opportunity creation, renewal confidence, expansion pipeline, and revenue influence. Strategic metrics include improved account understanding, better segmentation, stronger stakeholder mapping, and more disciplined use of customer insights.</p>
+      <p>A long-horizon campaign should not be evaluated only by last-touch attribution. B2B outcomes are cumulative and often influenced by multiple touchpoints. The proposed framework evaluates whether each intervention improves the account state and whether the sequence of interventions supports the intended decision path.</p>
+
+      <h2>8. Practical Implications</h2>
+      <p>The framework gives marketing teams a stronger role in revenue and customer strategy. Instead of operating as a content-distribution function, marketing becomes a source of journey intelligence and intervention design. Sales teams benefit because recommendations are tied to account readiness and stakeholder state. Customer success teams benefit because renewal and expansion signals can be connected with service and adoption context.</p>
+      <p>The framework also creates a more accountable conversation between automation and human judgment. Automated systems can identify patterns and suggest actions, while account teams validate context, apply relationship knowledge, and document exceptions. This combination is especially important in high-value B2B environments where trust and timing matter as much as message relevance.</p>
+
+      <h2>9. Conclusion</h2>
+      <p>This article presents an adaptive strategy optimization framework for long-horizon multi-channel B2B campaigns. By connecting journey-state estimation, response feedback, channel role design, and human governance, the framework supports more precise customer engagement and more accountable campaign decision-making.</p>
+    </main>
+
+    <footer class="site-footer"><div class="footer__inner"><div><strong>IT&amp;I 2024</strong><br>XI International Scientific Conference "Information Technology and Implementation"</div><div>Digital proceedings website for peer-reviewed research publication.</div></div></footer>
+  </body>
+</html>
