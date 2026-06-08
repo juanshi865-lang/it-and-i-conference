@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Proceedings - IT&amp;I 2024</title>
+    <link rel="stylesheet" href="assets/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="index.html"><span class="brand__mark">IT</span><span class="brand__text"><strong>IT&amp;I 2024</strong><span>Information Technology and Implementation</span></span></a>
+        <button class="nav-toggle" type="button" data-nav-toggle aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+        <nav class="site-nav" data-nav>
+          <a href="index.html">Home</a>
+          <a href="cfp.html">Call for Papers</a>
+          <a href="submit.html">Submit</a>
+          <a href="proceedings.html">Proceedings</a>
+          <a href="committee.html">Committee</a>
+          <a href="publisher.html">Publication Desk</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="page-hero">
+        <div class="section__inner page-hero__grid">
+          <div>
+            <p class="eyebrow">Digital Proceedings</p>
+            <h1>IT&amp;I 2024 published papers.</h1>
+            <p>Accepted papers are indexed here as web-native article records with abstracts, keywords, author information, citation metadata, and full text.</p>
+          </div>
+          <div class="metric-strip">
+            <div><strong data-paper-count>0</strong><span>published papers</span></div>
+            <div><strong>2024</strong><span>volume</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__inner">
+          <div class="toolbar">
+            <div class="field-inline">
+              <input data-paper-search type="search" placeholder="Search title, author, abstract">
+              <select data-paper-track aria-label="Filter by track">
+                <option value="">All tracks</option>
+              </select>
+            </div>
+            <a class="button button--ghost" href="publisher.html">Publication Desk</a>
+          </div>
+          <div class="paper-list" data-proceedings></div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><div class="footer__inner"><div><strong>IT&amp;I 2024</strong><br>XI International Scientific Conference "Information Technology and Implementation"</div><div>Digital proceedings website for peer-reviewed research publication.</div></div></footer>
+    <script src="assets/papers.js"></script>
+    <script src="assets/app.js"></script>
+  </body>
+</html>
