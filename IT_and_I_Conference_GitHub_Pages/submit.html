@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Submit Manuscript - IT&amp;I 2024</title>
+    <link rel="stylesheet" href="assets/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="index.html"><span class="brand__mark">IT</span><span class="brand__text"><strong>IT&amp;I 2024</strong><span>Information Technology and Implementation</span></span></a>
+        <button class="nav-toggle" type="button" data-nav-toggle aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+        <nav class="site-nav" data-nav>
+          <a href="index.html">Home</a>
+          <a href="cfp.html">Call for Papers</a>
+          <a href="submit.html">Submit</a>
+          <a href="proceedings.html">Proceedings</a>
+          <a href="committee.html">Committee</a>
+          <a href="publisher.html">Publication Desk</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="page-hero">
+        <div class="section__inner page-hero__grid">
+          <div>
+            <p class="eyebrow">Author Submission</p>
+            <h1>Prepare a manuscript submission for IT&amp;I 2024.</h1>
+            <p>Authors can generate an editorial email draft with paper metadata. Final manuscripts and supporting files should be attached in the email client.</p>
+          </div>
+          <div class="metric-strip">
+            <div><strong>Title</strong><span>required</span></div>
+            <div><strong>Track</strong><span>required</span></div>
+            <div><strong>Abstract</strong><span>required</span></div>
+            <div><strong>Text</strong><span>attach separately</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__inner layout-two">
+          <form class="form-panel" data-submission-form>
+            <div class="form-grid">
+              <label>
+                Editorial email
+                <input name="editorialEmail" type="email" placeholder="editorial-office@example.org" required>
+              </label>
+              <label>
+                Track
+                <select name="track" required>
+                  <option value="">Select track</option>
+                  <option>Applied AI and Intelligent Systems</option>
+                  <option>Software Engineering Practice</option>
+                  <option>Data Systems and Analytics</option>
+                  <option>Cybersecurity and Trust</option>
+                  <option>Digital Education and Skills</option>
+                  <option>Implementation Management</option>
+                </select>
+              </label>
+              <label class="span-2">
+                Paper title
+                <input name="title" type="text" placeholder="Full manuscript title" required>
+              </label>
+              <label class="span-2">
+                Authors
+                <input name="authors" type="text" placeholder="Author One, Author Two" required>
+              </label>
+              <label class="span-2">
+                Abstract
+                <textarea name="abstract" placeholder="150-300 word abstract" required></textarea>
+              </label>
+            </div>
+            <div class="form-actions">
+              <button class="button" type="submit">Generate Email Draft</button>
+              <a class="button button--ghost" href="cfp.html">Review CFP</a>
+            </div>
+          </form>
+          <aside class="stack">
+            <div class="notice" data-submission-output>
+              <p>Submission draft output will appear here.</p>
+            </div>
+            <div class="info-panel">
+              <h3>Manuscript Package</h3>
+              <p>Include the manuscript text, source files when available, author information, corresponding author contact, and any supplementary material needed for review.</p>
+            </div>
+            <div class="info-panel">
+              <h3>After Acceptance</h3>
+              <p>Final papers can be added to the proceedings through the Publication Desk with a stable web article URL or a local HTML file path in the website folder.</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><div class="footer__inner"><div><strong>IT&amp;I 2024</strong><br>XI International Scientific Conference "Information Technology and Implementation"</div><div>Digital proceedings website for peer-reviewed research publication.</div></div></footer>
+    <script src="assets/papers.js"></script>
+    <script src="assets/app.js"></script>
+  </body>
+</html>
